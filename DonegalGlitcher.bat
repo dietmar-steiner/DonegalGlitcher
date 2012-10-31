@@ -1,1 +1,0 @@
-java -jar "\\SWSDL-STORAGE\share\Programming\Netbeans\ImageGlitcher\DonegalGlitcher\dist\DonegalGlitcher.jar"
