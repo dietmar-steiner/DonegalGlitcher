@@ -42,12 +42,13 @@ public abstract class ImageTyp {
         if (0xFF == (data.get(0) & 0xFF)
                 && 0xD8 == (data.get(1) & 0xFF)
                 && 0xFF == (data.get(2) & 0xFF)
-                && 0xE0 == (data.get(3) & 0xFF)
-                && 0x4a == (data.get(6) & 0xFF)
-                && 0x46 == (data.get(7) & 0xFF)
-                && 0x49 == (data.get(8) & 0xFF)
-                && 0x46 == (data.get(9) & 0xFF)
-                && 0x00 == (data.get(10) & 0xFF)) {
+                && 0xE0 == (data.get(3) & 0xFF)) {
+            return new JPEGTyp();
+        }
+        if (0xFF == (data.get(0) & 0xFF)
+                && 0xD8 == (data.get(1) & 0xFF)
+                && 0xFF == (data.get(2) & 0xFF)
+                && 0xE1 == (data.get(3) & 0xFF)) {
             return new JPEGTyp();
         }
         return new UnknownFileTyp();
