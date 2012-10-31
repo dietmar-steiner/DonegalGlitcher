@@ -1,3 +1,5 @@
+This Software is released under the LGPL 2.1 licence
+
 Installation
 
 As before make a bat file for the jar file like:
