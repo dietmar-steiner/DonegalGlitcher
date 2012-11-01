@@ -4,10 +4,10 @@
  */
 package image;
 
+import donegalglitcher.action.Actions;
 import image.gui.ImagePartPropertyPanel;
 import image.gui.ImageStatus;
 import image.gui.ImageTreeItem;
-import donegalglitcher.action.Actions;
 import java.awt.Color;
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -151,7 +151,7 @@ public class Image implements ImageTreeItem {
             System.out.println("a: FF found");
         }
         int b = random.nextInt(work.size());
-        while (work.get(b) == 0xFF & a == b) {
+        while (work.get(b) == 0xFF && a == b) {
             b = random.nextInt(work.size());
             System.out.println("b: FF found");
         }
