@@ -21,8 +21,8 @@ public class RandomizeAction extends AbstractAction{
      */
     public RandomizeAction() {
         super("Randomize");
-        putValue(Action.ACCELERATOR_KEY, KeyStroke.getKeyStroke("shift R"));
-        putValue(Action.MNEMONIC_KEY, new Integer(java.awt.event.KeyEvent.VK_R));
+        putValue(Action.ACCELERATOR_KEY, KeyStroke.getKeyStroke("control Q"));
+        putValue(Action.MNEMONIC_KEY, new Integer(java.awt.event.KeyEvent.VK_Q));
     }
 
     @Override
